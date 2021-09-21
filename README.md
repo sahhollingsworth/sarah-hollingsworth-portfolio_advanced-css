@@ -21,3 +21,4 @@ Sarah Hollingsworth
 
 ## Acknowledgments
 * Icons from [the Noun Project](https://thenounproject.com/)
+* Reset.css in public domain, found at [Meyer Web](http://meyerweb.com/eric/tools/css/reset/)
