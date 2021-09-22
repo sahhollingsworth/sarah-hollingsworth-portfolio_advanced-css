@@ -167,7 +167,7 @@ article {
 
 /*Footer styling*/
 footer {
-    font-family: var(--mainfont;
+    font-family: var(--mainfont);
     background-color: var(--white);
     width: 100%;
     /* There is padding for the footer, but each 2 elements within also has smaller padding to make it readable but appear thematicall grouped to the user */
