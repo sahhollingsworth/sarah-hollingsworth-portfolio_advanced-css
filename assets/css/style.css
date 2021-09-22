@@ -5,19 +5,25 @@
     color:lightcoral;
 }
 
-/* styling for all links on page*/
+/* styling for all links on page. No bullets, convert cursor to pointer to indicate to user an action can be performed*/
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Default Styling for elements in the Header container, mirroring styling in Footer */
+/* Default Styling for elements in the Header*/
 header {
     font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
     background-color: #FFFFFF;
     position:fixed;
     width: 100%;
     padding: 20px;
+    /* Flex styling (container) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 header h1 {
@@ -27,15 +33,22 @@ header h1 {
 
 /* Main navigation menu styling*/
 #portfolio-menu {
-    padding-top:15px;
-    float:right;
-    margin-right:20px;
     font-size:20px;
+    margin-right:20px;
+    float:right;
+    /* Flex styling on nav */
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .portfolio-menu_item {
     padding:20px;
     display: inline-block;
+    
+}
+body {
+    background-color: #17161d;
 }
 
 /* main body styling*/
@@ -47,8 +60,14 @@ main {
 }
 
 section {
+    background-color: #17161d;
     display:flex;
     flex-wrap: wrap;
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
 }
 
 article {
@@ -84,30 +103,6 @@ footer {
     display: inline-block;
 }
 
-
 .contact-menu_item img {
     height: 80px;
-    width: 80px;
-    object-fit: scale scale-down;
 }
-
-/*.oversize img {
-    height: 70px;
-    width:70;
-    object-fit: contain;
-}*/
-
-/* Main navigation menu styling*/
-/*#portfolio-menu {
-    padding-top:15px;
-    float:right;
-    margin-right:20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:20px;
-    justify-content: right;
-}
-
-.portfolio-menu_item {
-    padding:20px;
-    display: inline-block;
-}*/

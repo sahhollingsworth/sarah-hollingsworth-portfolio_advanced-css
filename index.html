@@ -10,8 +10,9 @@
     <title>Sarah Hollingsworth Portfolio</title>
 </head>
 <body>
+    <!-- Header with main page nav -->
     <header>
-        <h1>It's me, Sarah</h1>
+        <h1>Sarah Hollingsworth</h1>
         <nav id="portfolio-menu">
             <ul>
                 <li class="portfolio-menu_item">
@@ -28,12 +29,13 @@
     </header>
     <main id="main">
         <section id="about">
+            <h2 class="section_header">About Me</h2>
             <img src="assets/images/headshot.png" alt="Sarah Holingsworth picture">
-            <h1>Sarah Hollingsworth | Web Developer</h1>
             <p>Burgeoning Web Developer with a background working through key operations of a typical tech company I enjoy approaching products from a wholelistic perspective, prioritizing user experience, product market fix, low impact and scalable infrastructure. This is my first shot at making a portfolio and I'm looking forward to revisiting it as I build my understanding of CSS in the course of the UCB Bootcamp. In the meanwhile, please enjoy *waves hand generally* this mess and contact me to share your relevant XKCD's.</p>
         </section>
+        <!-- Work section, each project an article-->
         <section id="work">
-            <h1>My Work</h1>
+            <h2 class="section_header">My Work</h1>
             <article class="projects" id="projects_lead">
                 <h2>Portfolio</h2>
                 <a href="https://sahhollingsworth.github.io/sarah-hollingsworth-portfolio_advanced-css/">
@@ -47,7 +49,7 @@
                 </a>
             </article>
             <article class="projects">
-                <h2>Placeholder One</h2>
+                <h2 class="section_header">Placeholder One</h2>
                 <a href="https://twitter.com/ConanOBrien/status/1428086551788011524" target="_blank">
                     <img src="assets/images/work_password-generator.png" alt="Thumbnail of password generator project">
                 </a>
@@ -59,10 +61,12 @@
                 </a>
             </article>
         </section>
-    </main>    
+    </main>  
+    <!-- Footer, including Contact section-->  
     <footer id="contact">
         <h2>Reach out</h2>
         <nav id="contact-menu">
+            <!-- LinkedIn and Github logo assets are slightly larger then phone and email logo assets. Leveraged specific ordering of li to make it look intentional until I can replace assets such that they are the same size.-->
             <ul>
                 <li class="contact-menu_item">
                     <a href="mailto:sahhollingsworth@gmail.com">
