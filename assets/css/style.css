@@ -5,10 +5,12 @@
     color:lightcoral;
 }
 
-/* styling for all links on page. No bullets, convert cursor to pointer to indicate to user an action can be performed*/
+
+/* styling for all visible links on page, which are either in header or footer nav elements. No bullets, convert cursor to pointer to indicate to user an action can be performed*/
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #181818;
 }
 
 /* Default Styling for elements in the Header*/
@@ -28,16 +30,17 @@ header {
 
 header h1 {
     display:inline-block;
+    color: #181818;
     font-size:48px;
 }
 
 /* Main navigation menu styling*/
 #portfolio-menu {
-    font-size:20px;
-    margin-right:20px;
-    float:right;
+    font-size: 20px;
+    margin-right: 20px;
+    float: right;
     /* Flex styling on nav */
-    display:flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -45,8 +48,8 @@ header h1 {
 .portfolio-menu_item {
     padding:20px;
     display: inline-block;
-    
 }
+
 body {
     background-color: #17161d;
 }
@@ -95,10 +98,31 @@ footer {
     font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
     background-color: #FFFFFF;
     width: 100%;
-    padding: 20px;
+    /* There is padding for the footer, but each 2 elements within also has smaller padding to make it readable but appear thematicall grouped to the user */
+    padding: 2% 0 0 2%;
+    /* Flex styling (container) mirrored from Header styling */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* contact section styling*/ 
+footer h2 {
+    color: #181818;
+    font-size: 30px;
+    padding-bottom: 1% 0 0 1%;
+}
+
+/* Contact links (images) in footer */
+#contact-menu {
+    float:center;
+    padding-bottom: 1% 0 0 1%;
+    /* Flex styling on nav */
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .contact-menu_item {
     display: inline-block;
 }
