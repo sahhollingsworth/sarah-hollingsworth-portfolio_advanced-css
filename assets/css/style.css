@@ -1,8 +1,8 @@
 /*sets default styling values for font family, size, and color - applicable to all visible text*/
 * {
     font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif; 
-    font-size:16px;
-    color:lightcoral;
+    font-size: 25px;
+    color:#525252;
 }
 
 
@@ -17,7 +17,8 @@ a {
 header {
     font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
     background-color: #FFFFFF;
-    position:fixed;
+    /* sticky (instead of fixed) to stop body starting below header */
+    position: sticky;
     width: 100%;
     padding: 20px;
     /* Flex styling (container) */
@@ -32,6 +33,7 @@ header h1 {
     display:inline-block;
     color: #181818;
     font-size:48px;
+    font-weight:bolder;
 }
 
 /* Main navigation menu styling*/
@@ -52,6 +54,7 @@ header h1 {
 
 body {
     background-color: #17161d;
+    padding-top: ; ---------------
 }
 
 /* main body styling*/
@@ -63,19 +66,23 @@ main {
 }
 
 section {
-    background-color: #17161d;
-    display:flex;
-    flex-wrap: wrap;
     width: 80%;
+    padding: 20px;
+    /* Flex styling (container) */
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     margin:auto;
 }
 
-article {
-    display:flex;
-    flex-wrap: wrap;
+/* Header visual demarcation from corresponding section contents */
+.section_header {
+    color:lightseagreen;
+    font-size: 40px;
+}
+
+#about p {
+
 }
 
 #about img {
@@ -83,6 +90,11 @@ article {
     width: 200px;
     margin: 25px;
 
+}
+
+article {
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .projects img {
@@ -129,4 +141,21 @@ footer h2 {
 
 .contact-menu_item img {
     height: 80px;
+}
+
+/* */
+/* Media queries */
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+
+}
+
+/* iPads, Tablets */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Standard screens, laptops */
+@media screen and (max-width: 1024px) {
+
 }

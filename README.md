@@ -22,3 +22,6 @@ Sarah Hollingsworth
 ## Acknowledgments
 * Icons from [the Noun Project](https://thenounproject.com/)
 * Reset.css in public domain, found at [Meyer Web](http://meyerweb.com/eric/tools/css/reset/)
+* Erik Kennedy:
+  * [UI Design principles](https://twitter.com/erikdkennedy/status/1328771593934290944) helped guide some visual choices and I'll be exploring it further as I iterate on the portfolio's UI in the future.
+  * [The Responsive Website Font Size Guidelines](https://learnui.design/blog/mobile-desktop-website-font-size-guidelines.html) article for better UI.
