@@ -4,11 +4,21 @@ This is a portfolio page demonstrating my experience, projects, as well as shari
 The second intention of this project was build it by focusing on leveraging advanced css tools.
 
 ## Deployed site
-[Click here to visit my portfolio page.](https://sahhollingsworth.github.io/sarah-hollingsworth-portfolio_advanced-css/ "Sarah Hollingsworth")
+[Click here to visit my deployed portfolio application.](https://sahhollingsworth.github.io/sarah-hollingsworth-portfolio_advanced-css/ "Sarah Hollingsworth")
 
 ![Image](./assets/images/portfolio_readme.png "Sarah Hollingsworth portfolio screenshot")
 
 ## Summary
+* Portfolio must include core information either available on load or easy to discover to be useful job-seeking tools:
+  * developer's name, 
+  * recent photo
+  * summary of develop, skills or interests
+  * previous work
+  * contact information
+* I leveraged <nav> elements and images to keep the page as clean as possible, in lieu of returning addition text
+* The application leverages a responsive layout that accomoddate major viewport variations.
+* The first, leading project image is larger than the other projects to prompt enagagement on key projects.
+* All project images open the corressponding application in a new tab.
 
 ## Built with
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used to create elements on the DOM

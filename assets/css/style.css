@@ -1,8 +1,17 @@
+:root {
+    --dark: #181818;
+    --darkblue: #17161d;
+    --mid: #525252;
+    --white: #FFFFFF;
+    --pop: #FED43A;
+    --mainfont: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
+    }
+
 /*sets default styling values for font family, size, and color - applicable to all visible text*/
 * {
-    font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif; 
+    font-family: var(--mainfont); 
     font-size: 25px;
-    color:#525252;
+    color: var(--mid);
 }
 
 
@@ -11,13 +20,13 @@ a {
     text-decoration: none;
     cursor: pointer;
     /* this font color is the same as the background-color in all <main> elements*/
-    color: #181818;
+    color: var(--dark);
 }
 
 /* Default Styling for elements in the Header*/
 header {
-    font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
-    background-color: #FFFFFF;
+    font-family: var(--mainfont);
+    background-color: var(--white);
     width: 100%;
     padding: 20px;
     /* Flex styling (container) */
@@ -32,7 +41,7 @@ header {
 
 header h1 {
     display:inline-block;
-    color: #181818;
+    color: var(--dark);
     font-size:48px;
     font-weight:bolder;
     letter-spacing: 1px;
@@ -55,14 +64,14 @@ header h1 {
 }
 
 body {
-    background-color: #17161d;
+    background-color: var(--darkblue);
     padding-top: ; ---------------
 }
 
 /* main body styling*/
 main {
-    color: #FFFFFF;
-    background-color: #17161d;
+    color: var(--white);
+    background-color: var(--darkblue);
     display:flex;
     flex-wrap: wrap;
 }
@@ -79,7 +88,7 @@ section {
 
 /* Header visual demarcation from corresponding section contents.*/
 .section_header {
-    color:#FFFFFF;
+    color: var(--white);
     font-size: 40px;
     letter-spacing: 1px;
     margin-left: 0px;
@@ -88,7 +97,7 @@ section {
 }
 
 .section_content {
-    border-left: #FFFFFF 10px groove;
+    border-left: var(--white) 10px groove;
     margin-left: 20px;
     padding-top: 2%;
     padding-right: 0;
@@ -124,31 +133,31 @@ article {
 }
 
 /*Styling overlay the heading of each project onto the corresponding image*/
-.projects_header {
-    background: #525252;
+/*.projects_header {
+    background:  var(--mid);
     color: limegreen;
     opacity: 100; /* change to 0 one you fix orientation on top of image*/
-    height: 100%;
+    /*height: 100%;
     width: 100%;
 }
 
 /* Project image styling, custom to each project's dominant image color */
 #projects_portfolio {
     max-width: 500px;
-    border-left: 2px solid #FFFFFF;
-    box-shadow: 20px 20px #FED43A;
+    border-left: 2px solid var(--white);
+    box-shadow: 20px 20px var(--pop);
 }
 
 #projects_horiseon {
     max-width: 500px;
     border-left: 2px solid #2a607c;
-    box-shadow: 20px 20px #FED43A;
+    box-shadow: 20px 20px var(--pop);
 }
 
 #projects_placeholders{
     max-width: 500px;
     border-left: 2px solid #F6F6F6;
-    box-shadow: 20px 20px #FED43A;
+    box-shadow: 20px 20px var(--pop);
 }
 
 /* manual force of the 1st project image size to be larger than all following project images*/
@@ -158,8 +167,8 @@ article {
 
 /*Footer styling*/
 footer {
-    font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
-    background-color: #FFFFFF;
+    font-family: var(--mainfont;
+    background-color: var(--white);
     width: 100%;
     /* There is padding for the footer, but each 2 elements within also has smaller padding to make it readable but appear thematicall grouped to the user */
     padding: 2% 0 0 2%;
@@ -171,8 +180,10 @@ footer {
 }
 
 footer h3 {
-    color: #181818;
+    color: var(--dark);
     font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
     padding-bottom: 1% 0 0 1%;
 }
 
@@ -191,10 +202,9 @@ footer h3 {
 }
 
 .contact-menu_item img {
-    height: 80px;
+    height: 60px;
 }
 
-/* */
 /* Media queries */
 /* Mobile devices */
 @media screen and (max-width: 480px) {
