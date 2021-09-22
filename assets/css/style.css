@@ -10,6 +10,7 @@
 a {
     text-decoration: none;
     cursor: pointer;
+    /* this font color is the same as the background-color in all <main> elements*/
     color: #181818;
 }
 
@@ -17,8 +18,6 @@ a {
 header {
     font-family: 'Trebuchet MS', 'Helvetica', 'Verdana', sans-serif;
     background-color: #FFFFFF;
-    /* sticky (instead of fixed) to stop body starting below header */
-    position: sticky;
     width: 100%;
     padding: 20px;
     /* Flex styling (container) */
@@ -26,7 +25,9 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
+    /* sticky (instead of fixed) to stop body starting below header */
+    position: sticky;
+    align-self: flex-start;
 }
 
 header h1 {
@@ -34,6 +35,7 @@ header h1 {
     color: #181818;
     font-size:48px;
     font-weight:bolder;
+    letter-spacing: 1px;
 }
 
 /* Main navigation menu styling*/
@@ -41,14 +43,14 @@ header h1 {
     font-size: 20px;
     margin-right: 20px;
     float: right;
-    /* Flex styling on nav */
+    /* Flex styling on nav (container) */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .portfolio-menu_item {
-    padding:20px;
+    padding: 20px;
     display: inline-block;
 }
 
@@ -67,42 +69,91 @@ main {
 
 section {
     width: 80%;
-    padding: 20px;
-    /* Flex styling (container) */
+    padding: 20px 0 20px 0;
+    /* Flex styling (container) related to #section_contents  */
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin:auto;
+    justify-content: space-between;
+    margin: auto;
 }
 
-/* Header visual demarcation from corresponding section contents */
+/* Header visual demarcation from corresponding section contents.*/
 .section_header {
-    color:lightseagreen;
+    color:#FFFFFF;
     font-size: 40px;
+    letter-spacing: 1px;
+    margin-left: 0px;
+    /* flex styling to share horizontal space with .section_content*/
+    flex: 1 10%;
 }
 
-#about p {
-
+.section_content {
+    border-left: #FFFFFF 10px groove;
+    margin-left: 20px;
+    padding-top: 2%;
+    padding-right: 0;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    /* Text too hard to read without additional spacing*/
+    line-height: 125%;
+    /* flex styling to share horizontal space with .section_header*/
+    flex: 1 90%;
 }
 
 #about img {
     border-radius: 50%;
-    width: 200px;
-    margin: 25px;
+    width: 40%;
+    /*margin: 25px;*/
+    display: block;
+    padding-bottom: 25px;
+    margin: 0 auto 0 auto;
+}
 
+/* Work section styling and grid definition */
+#work {
+    /* Flex styling (container) */
+    display:flex
+    flex-direction:row;
 }
 
 article {
     display:flex;
     flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px;
 }
 
-.projects img {
+/*Styling overlay the heading of each project onto the corresponding image*/
+.projects_header {
+    background: #525252;
+    color: limegreen;
+    opacity: 100; /* change to 0 one you fix orientation on top of image*/
+    height: 100%;
+    width: 100%;
+}
+
+/* Project image styling, custom to each project's dominant image color */
+#projects_portfolio {
     max-width: 500px;
+    border-left: 2px solid #FFFFFF;
+    box-shadow: 20px 20px #FED43A;
 }
 
+#projects_horiseon {
+    max-width: 500px;
+    border-left: 2px solid #2a607c;
+    box-shadow: 20px 20px #FED43A;
+}
+
+#projects_placeholders{
+    max-width: 500px;
+    border-left: 2px solid #F6F6F6;
+    box-shadow: 20px 20px #FED43A;
+}
+
+/* manual force of the 1st project image size to be larger than all following project images*/
 #projects_lead img {
-    max-width 600px;
+    max-width: 600px;
 }
 
 /*Footer styling*/
@@ -119,7 +170,7 @@ footer {
     flex-direction: column;
 }
 
-footer h2 {
+footer h3 {
     color: #181818;
     font-size: 30px;
     padding-bottom: 1% 0 0 1%;
@@ -128,7 +179,7 @@ footer h2 {
 /* Contact links (images) in footer */
 #contact-menu {
     float:center;
-    padding-bottom: 1% 0 0 1%;
+    padding: 1% 0 0 1%;
     /* Flex styling on nav */
     display:flex;
     justify-content: space-around;
@@ -147,12 +198,23 @@ footer h2 {
 /* Media queries */
 /* Mobile devices */
 @media screen and (max-width: 480px) {
-
+    make the two columns stack on top of each other instead of next to each other
+    header {
+        flex-direction: row;
+    }
+    #contact-menu {
+        flex-direction: column;
+    }
 }
 
 /* iPads, Tablets */
 @media screen and (max-width: 768px) {
-
+    header {
+        flex-direction: row;
+    }
+    #contact-menu {
+        flex-direction: column;
+    }
 }
 
 /* Standard screens, laptops */

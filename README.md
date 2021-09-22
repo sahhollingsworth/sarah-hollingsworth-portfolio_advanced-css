@@ -1,10 +1,12 @@
 # Sarah Hollingsworth Portfolio Page
-This is a protfolio page with my experience, projects, and contact information - leveraging advanced css functionality. 
+This is a portfolio page demonstrating my experience, projects, as well as sharing my contact information and some information about who I am. This is intented to serve as a resource for future potential employers to review to determine my potential fit for an available role. 
+
+The second intention of this project was build it by focusing on leveraging advanced css tools.
 
 ## Deployed site
 [Click here to visit my portfolio page.](https://sahhollingsworth.github.io/sarah-hollingsworth-portfolio_advanced-css/ "Sarah Hollingsworth")
 
-![Image](PLACEHOLDER "Sarah Hollingsworth portfolio screenshot")
+![Image](./assets/images/portfolio_readme.png "Sarah Hollingsworth portfolio screenshot")
 
 ## Summary
 
